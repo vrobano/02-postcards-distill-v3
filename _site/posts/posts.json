@@ -5,7 +5,7 @@
     "description": "Jóvenes a Programar",
     "author": [
       {
-        "name": "Unknown",
+        "name": "VR",
         "url": {}
       }
     ],
@@ -13,7 +13,7 @@
     "categories": [],
     "contents": "\r\nJóvenes a Programar “Álvaro Lamé” es un programa de Plan Ceibal que capacita a jóvenes de entre 18 y 30 años en programación, inglés y habilidades socio-emocionales.\r\n\r\n\r\n\r\n",
     "preview": {},
-    "last_modified": "2022-01-08T16:40:43+00:00",
-    "input_file": "jap.knit.md"
+    "last_modified": "2022-01-08T16:44:55+00:00",
+    "input_file": {}
   }
 ]
