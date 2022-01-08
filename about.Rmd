@@ -1,0 +1,16 @@
+---
+title: "VR"
+image: "vir.jpg"
+links:
+  - label: LinkedIn
+    url: "https://linkedin.com/virginia-robano-"
+  - label: Twitter
+    url: "https://twitter.com/vrobano"
+  - label: GitHub
+    url: "https://github.com/vrobano"
+  - label: Email
+    url: "mailto:email@email.com"
+output:
+  postcards::jolla
+---
+ I am passionate about female empowerment, spurring dynamic and innovative entrepreneurship, and democratising access to knowledge. My purpose is to level the playing field and generate equality of opportunities.
