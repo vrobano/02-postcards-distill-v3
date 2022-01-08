@@ -2,7 +2,10 @@ name: "."
 title: "Gender Indicators"
 description: |
   Gender Indicators
+favicon: images/favicon.png
 output_dir: "_site"
+twitter:
+  site: "@vrobano"
 navbar:
   right:
     - text: "Home"
