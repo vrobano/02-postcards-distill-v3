@@ -2040,6 +2040,10 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   <!--/radix_placeholder_distill-->
   <script src="site_libs/header-attrs-2.11.4/header-attrs.js"></script>
+  <script src="site_libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
+  <script src="site_libs/viz-1.8.2/viz.js"></script>
+  <link href="site_libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet" />
+  <script src="site_libs/grViz-binding-1.0.6.1/grViz.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2091,6 +2095,15 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
 <div class="d-article">
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span style="display:block;" id="fig:fig-ind4"></span>
+<div id="htmlwidget-c95615e815c2f610d6fb" style="width:120%;height:384px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-c95615e815c2f610d6fb">{"x":{"diagram":"digraph {\n\n      graph[layout=dot, rankdir = TB, overlap = false]\n      \n       node[shape = plaintext, fontname = Verdana, fontcolor=DarkGrey]\n      # n0 [label = \"Dimensiones de análisis\"]\n  \n      node[shape = folder, fontname = Verdana, fontcolor=Crimson,margin=0.3]\n  \n      n1 [label = \"Relevancia\"]\n      node[shape = plaintext, fontname = Verdana, fontcolor=Crimson]\n      n2 [label = \"Describir el propósito \n del programa\"]\n      n3 [label = \"Validar su relevancia \n desde una perspectiva \n de género\"]\n \n      node [shape = folder, fontname= Verdana, margin = 0.25, fontcolor=DarkOrange]          \n      n4  [label = \"Efecto\"]\n      node [shape = plaintext, fontname= Verdana, margin = 0.25, fontcolor=DarkOrange]\n      n5 [label = \"Analizar \n el programa\"]\n      n6 [label = \"Evaluar \n efecto\"]\n \n subgraph{\n  rank = same\n  \n  n61 [label = \"Directo\"]\n  n62 [label = \"Indirecto\"]\n }\n \n  node [shape = folder, fontcolor=Indigo, margin = 0.35]        \n  n7 [label = \"Conclusiones \"]\n  node [shape = plaintext, fontcolor=Indigo, margin = 0.35] \n  n8 [label = \"Resultados\"]\n  n9 [label = \"Propuestas \n para aumentar \n la equidad de género\"]\n  \n  node[shape = plaintext, fontname = Verdana, fontcolor=Crimson]\n  n10 [label = \"Organización \n de la \n vida privada\"]\n  n11 [label = \"Autonomía económica \n división sexual del trabajo\"]\n  n12 [label = \"Participación \n ciudadana\"]\n \n n13 [label = \"Acceso a recursos: \n educación, conocimiento, \n trabajo, dinero\"]\n n14 [label = \"Normas, \n valores, \n roles de género, \n cultura, \n estereotipos\"]\n n15 [ label = \"Ejercicio \n de derechos \n fundamentales \n civiles, sociales \n políticos: \n más voz y voto\"]  \n\n node[shape = plaintext, fontname = Verdana, fontcolor=DarkOrange]\n n17 [label = \"Diseño de indicadores, \n construcción, \n medición\" ]\n \n\n rank = same {n4, n5, n6, n17}\n \n\n edge [color = darkgrey ]\n    \n # n0->n1\n#  n0->n4\n # n0->n7\n   n7 -> n8\n  n7-> n9\n \n edge [color = Crimson ]\n \n \n  n1-> n2 \n  n1-> n3\n  \n  \n  n3 -> n10 ->n14\n  n3 -> n11 -> n13\n  n3 -> n12 ->n15 \n  \n  n17-> n6 \n \n edge [color = DarkOrange ]\n   \n n13 -> n4\n n14 -> n4\n n15 -> n4\n n5->n17\n \n   #edge [color = grey ]\n   n4-> n5 \n  n6 -> n61 \n  n6-> n62 \n  \n {n61, n62} -> n7\n\n    }","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<p class="caption">
+Figure 1: Dimensiones de análisis con foco en la equidad de género
+</p>
+</div>
+</div>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

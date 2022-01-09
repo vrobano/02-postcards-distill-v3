@@ -13,3 +13,92 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ```
 
+```{r fig-ind4, fig.cap = "Dimensiones de análisis con foco en la equidad de género", echo=FALSE, out.width="120%"}
+#install.packages("DiagrammeR")
+DiagrammeR::grViz("digraph {
+
+      graph[layout=dot, rankdir = TB, overlap = false]
+      
+       node[shape = plaintext, fontname = Verdana, fontcolor=DarkGrey]
+      # n0 [label = 'Dimensiones de análisis']
+  
+      node[shape = folder, fontname = Verdana, fontcolor=Crimson,margin=0.3]
+  
+      n1 [label = 'Relevancia']
+      node[shape = plaintext, fontname = Verdana, fontcolor=Crimson]
+      n2 [label = 'Describir el propósito \n del programa']
+      n3 [label = 'Validar su relevancia \n desde una perspectiva \n de género']
+ 
+      node [shape = folder, fontname= Verdana, margin = 0.25, fontcolor=DarkOrange]          
+      n4  [label = 'Efecto']
+      node [shape = plaintext, fontname= Verdana, margin = 0.25, fontcolor=DarkOrange]
+      n5 [label = 'Analizar \n el programa']
+      n6 [label = 'Evaluar \n efecto']
+ 
+ subgraph{
+  rank = same
+  
+  n61 [label = 'Directo']
+  n62 [label = 'Indirecto']
+ }
+ 
+  node [shape = folder, fontcolor=Indigo, margin = 0.35]        
+  n7 [label = 'Conclusiones ']
+  node [shape = plaintext, fontcolor=Indigo, margin = 0.35] 
+  n8 [label = 'Resultados']
+  n9 [label = 'Propuestas \n para aumentar \n la equidad de género']
+  
+  node[shape = plaintext, fontname = Verdana, fontcolor=Crimson]
+  n10 [label = 'Organización \n de la \n vida privada']
+  n11 [label = 'Autonomía económica \n división sexual del trabajo']
+  n12 [label = 'Participación \n ciudadana']
+ 
+ n13 [label = 'Acceso a recursos: \n educación, conocimiento, \n trabajo, dinero']
+ n14 [label = 'Normas, \n valores, \n roles de género, \n cultura, \n estereotipos']
+ n15 [ label = 'Ejercicio \n de derechos \n fundamentales \n civiles, sociales \n políticos: \n más voz y voto']  
+
+ node[shape = plaintext, fontname = Verdana, fontcolor=DarkOrange]
+ n17 [label = 'Diseño de indicadores, \n construcción, \n medición' ]
+ 
+
+ rank = same {n4, n5, n6, n17}
+ 
+
+ edge [color = darkgrey ]
+    
+ # n0->n1
+#  n0->n4
+ # n0->n7
+   n7 -> n8
+  n7-> n9
+ 
+ edge [color = Crimson ]
+ 
+ 
+  n1-> n2 
+  n1-> n3
+  
+  
+  n3 -> n10 ->n14
+  n3 -> n11 -> n13
+  n3 -> n12 ->n15 
+  
+  n17-> n6 
+ 
+ edge [color = DarkOrange ]
+   
+ n13 -> n4
+ n14 -> n4
+ n15 -> n4
+ n5->n17
+ 
+   #edge [color = grey ]
+   n4-> n5 
+  n6 -> n61 
+  n6-> n62 
+  
+ {n61, n62} -> n7
+
+    }")
+
+```
